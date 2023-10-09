@@ -12,6 +12,14 @@ Step 2
 ```shell
 pyenv install 3.10.10
 ```
+Add this to your `~/.profile` and restart your terminal
+```shell
+#### Python ####
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+```
+
 Step 3
 ```shell
 pyenv shell 3.10.10
